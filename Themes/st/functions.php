@@ -9,7 +9,7 @@ function st_recent_posts_function($atts, $content = null) {
 	query_posts(array('orderby' => 'date', 'order' => 'DESC' , 'showposts' => $posts));
 	if (have_posts()) :
 		while (have_posts()) : the_post();
-			$return_string .= '<div><a href="'.get_permalink().'">'.get_the_title().'</a></div><div>'.nl2br(get_the_excerpt()).'</div><div>&nbsp;</div>';
+			$return_string .= '<div><a href="'.get_permalink().'">'.get_the_title().'</a></div><div>'.nl2br(get_the_excerpt()).'</div><div>'.get_the_date().'</div><div>&nbsp;</div>';
 		endwhile;
 	endif;
 
