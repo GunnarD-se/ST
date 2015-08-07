@@ -6,14 +6,12 @@ function st_recent_posts_function($atts, $content = null) {
 	), $atts));
 
 	$return_string = '<h3>'.$content.'</h3>';
-#	$return_string .= '<ul style="list-style-type: none;">';
 	query_posts(array('orderby' => 'date', 'order' => 'DESC' , 'showposts' => $posts));
 	if (have_posts()) :
 		while (have_posts()) : the_post();
 			$return_string .= '<div><a href="'.get_permalink().'">'.get_the_title().'</a></div><div>'.nl2br(get_the_excerpt()).'</div><div>&nbsp;</div>';
 		endwhile;
 	endif;
-#	$return_string .= '</ul>';
 
 	wp_reset_query();
 	return $return_string;
