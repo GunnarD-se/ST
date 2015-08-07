@@ -1,0 +1,72 @@
+/*
+ Theme Name:   ST
+ Description:  Responsive Child Theme for ST
+ Author:       GunnarD
+ Author URI:   http://www.gunnard.se
+ Template:     responsive
+ Version:      1.0.0
+*/
+
+@import url("../responsive/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+#logo {
+	padding-bottom: 10px;
+}
+
+.menu {
+  background-color: #009de0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#009de0), to(#009de0));
+  background-image: -webkit-linear-gradient(top, #009de0, #009de0);
+  background-image: -moz-linear-gradient(top, #009de0, #009de0);
+  background-image: -ms-linear-gradient(top, #009de0, #009de0);
+  background-image: -o-linear-gradient(top, #009de0, #009de0);
+  background-image: linear-gradient(top, #009de0, #009de0);
+  clear: both;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#009de0, endColorstr=#009de0);
+  margin: 0 auto;
+}
+
+.menu .current_page_item a, .menu .current-menu-item a {
+    background-color: rgb(51, 102, 255);
+}
+
+.menu a:hover {
+	background-color: #009de0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#009de0), to(#809dff));
+	background-image: -webkit-linear-gradient(top, #009de0, #809dff);
+	background-image: -moz-linear-gradient(top, #009de0, #809dff);
+	background-image: -ms-linear-gradient(top, #009de0, #809dff);
+	background-image: -o-linear-gradient(top, #009de0, #809dff);
+	background-image: linear-gradient(top, #009de0, #809dff);
+	color: #fff;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#009de0, endColorstr=#809dff);
+}
+
+.menu li li {
+	background: #009de0;
+	background-image: none;
+	border: 1px solid #e5e5e5;
+	color: #fff;
+	filter: none;
+	margin: -1px 0 1px 0;
+	width: auto;
+}
+
+.menu li li a {
+	background: #009de0 !important;
+	background-image: none;
+	border: none;
+	color: #fff;
+	filter: none;
+}
+
+.menu li li a:hover {
+	background: #809de0 !important;
+	background-image: none;
+	border: none;
+	color: #fff;
+	filter: none;
+}
